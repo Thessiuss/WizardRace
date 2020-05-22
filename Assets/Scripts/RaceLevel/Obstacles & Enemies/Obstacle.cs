@@ -40,7 +40,7 @@ public class Obstacle : MonoBehaviour {
     {
         if (playerTriggers)
         {
-            if (other.gameObject.name == "BodyTrigger")
+            if (other.gameObject.name == "BodyTrigger" || other.gameObject.name == "BodyCollider")
             {
                 PlayerCrashed();
             }

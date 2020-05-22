@@ -332,8 +332,6 @@ public class PlayerController : MonoBehaviour {
         playerRB.AddForce(Vector3.right * negDirection * Time.deltaTime * 1000, ForceMode.Acceleration);
     }
 
-	
-
     // Called by Obstacle script when collided with an object
     public void SetPlayerVelocity(float penalty)
     {
@@ -375,29 +373,30 @@ public class PlayerController : MonoBehaviour {
     // Called every frame in Update
     private void AnimationMovementSpeed()
     {
-        float instSpeed = playerRB.velocity.x;
-        if (instSpeed < 0.1f && instSpeed > -0.1f) {
+        float curSpeed = playerRB.velocity.x;
+        if (curSpeed < 0.1f && curSpeed > -0.1f) {
             // Make sure it's idle
             anim.SetBool("Walking", false);
             return;
         }
-        if (instSpeed >= -10 && instSpeed <= 10)
+        if (curSpeed >= -10 && curSpeed <= 10)
         {
             anim.SetBool("Walking", true);
             anim.SetBool("Running", false);
-            instSpeed = instSpeed * 0.5f;
-            anim.SetFloat("WalkSpeed", instSpeed);
+            curSpeed = curSpeed * 0.5f;
+            anim.SetFloat("WalkSpeed", curSpeed);
             return;
         }
-        if (instSpeed > 10 || instSpeed < -10)
+        if (curSpeed > 10 || curSpeed < -10)
         {
             anim.SetBool("Running", true);
-            instSpeed = (instSpeed + (0.03f * instSpeed)- 0.3f) * (0.1f);
-            anim.SetFloat("RunSpeed", instSpeed);
+            curSpeed = (curSpeed + (0.03f * curSpeed) - 0.3f) * (0.1f);
+            anim.SetFloat("RunSpeed", curSpeed);
             return;
         }
     }
 
+    // called as a coroutine by setplayer velocity
     private IEnumerator Crash()
     {
         while (Mathf.Abs(playerRB.velocity.x) > 4.0f)
@@ -413,6 +412,7 @@ public class PlayerController : MonoBehaviour {
         yield break;
     }
 
+    // called as a coroutine by setplayer velocity
     private IEnumerator Stumble()
     {
         yield return new WaitForSeconds (0.1f);
