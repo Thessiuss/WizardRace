@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0993cf63b9f190e4288bbb3539d2b194
+timeCreated: 1540344314
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: You're Gone
+  fontNames:
+  - You're Gone
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

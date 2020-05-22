@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3eb3d3d025d9b054eb631d7fb56b57d9
+timeCreated: 1540344314
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Got No Heart
+  fontNames:
+  - Got No Heart
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1ec0eeaa2f9ca27439c37b04fafc35ac, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

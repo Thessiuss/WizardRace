@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2b031ff12f2f93b4da12826ce314cd2d
+timeCreated: 1540344333
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bullskrit NFI
+  fontNames:
+  - Bullskrit NFI
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

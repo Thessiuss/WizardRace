@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: defd7a43a3f04dc4992fb81947703979
+timeCreated: 1540347055
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: PP Handwriting
+  fontNames:
+  - PP Handwriting
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
